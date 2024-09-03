@@ -1,6 +1,7 @@
 import Link from "next/link.js";
 import routes from "@/routes/navbarRoutes.js";
 import ThemeControllers from "../Atoms/ThemeControllers.jsx";
+import Image from "next/image.js";
 
 function Navbar() {
   return (
@@ -35,7 +36,9 @@ function Navbar() {
           </ul>
         </div>
         <Link href={"/"}>
-          <p className="text-xl btn btn-ghost">daisyUI</p>
+          <h1 className="text-2xl font-bold hover:text-gray-700">
+            Detail shop
+          </h1>
         </Link>
       </div>
       <div className="hidden navbar-center lg:flex">
@@ -93,7 +96,7 @@ function Navbar() {
             className="btn btn-ghost btn-circle avatar"
           >
             <div className="w-10 rounded-full">
-              <img
+              <Image
                 alt="Tailwind CSS Navbar component"
                 src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
               />

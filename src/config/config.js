@@ -1,17 +1,25 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import {
+  apiKey,
+  appId,
+  authDomain,
+  messagingSenderId,
+  projectId,
+  storageBucket,
+} from "./env.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBWZa-Vdmu_D_95Ayx48s-s2CvYu_NmOtI",
-  authDomain: "codernext-detailing.firebaseapp.com",
-  projectId: "codernext-detailing",
-  storageBucket: "codernext-detailing.appspot.com",
-  messagingSenderId: "308139391855",
-  appId: "1:308139391855:web:5a31153cf5f142e39a469a",
+  apiKey: apiKey,
+  authDomain: authDomain,
+  projectId: projectId,
+  storageBucket: storageBucket,
+  messagingSenderId: messagingSenderId,
+  appId: appId,
 };
 
 // Initialize Firebase
